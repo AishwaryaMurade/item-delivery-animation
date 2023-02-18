@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Item Delivery Animation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="card">
+      <h1>Shopping List</h1>
+
+      <div class="icon icon--order-success svg" id="success">
+        <svg xmlns="http://www.w3.org/2000/svg" width="72px" height="72px">
+          <g fill="none" stroke="#8EC343" stroke-width="2">
+            <circle cx="36" cy="36" r="35" style="stroke-dasharray:240px, 240px; stroke-dashoffset: 480px;"></circle>
+            <path d="M17.417,37.778l9.93,9.909l25.444-25.393" style="stroke-dasharray:50px, 50px; stroke-dashoffset: 0px;"></path>
+          </g>
+        </svg>
+
+      </div>
+      <div class="listitem" id="listitem">
+         <div>
+          <img class="product__image" src="https://dkstatics-public.digikala.com/digikala-products/5dfe5b8462a797a3f51f6a186e17b08406139f24_1601319806.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="product box" width="70px">
+          <div>
+            <h5>T-shirt Wi-common</h5>
+            <span>$46.27</span>
+          </div>
+
+         </div>
+         <div>
+          <img class="product__image" src="https://dkstatics-public.digikala.com/digikala-products/196807b53db0ecf58fc879fcab5020b255b2d27a_1634376218.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="product box" width="70px">
+          <div><h5>Headphone j54</h5>
+            <span>$186</span></div>
+
+         </div>
+         <div>
+          <img class="product__image" src="https://dkstatics-public.digikala.com/digikala-products/533becf7cffbd9bab5c69065e545064f29a5bced_1653125083.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="product box" width="70px">
+          <div>
+            <h5>Laptop asus 14-8gi</h5>
+            <span>$825</span>
+          </div>
+
+
+
+         </div>
+      </div>
+    </div>
+    <button class="truck-button">
+      <span class="default">Complete Order</span>
+      <span class="success">
+          Order Placed
+      </span>
+      <div class="truck">
+          <div class="wheel"></div>
+          <div class="back"></div>
+          <div class="front"></div>
+          <div class="box"></div>
+      </div>
+  </button>
+
+  </div>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
